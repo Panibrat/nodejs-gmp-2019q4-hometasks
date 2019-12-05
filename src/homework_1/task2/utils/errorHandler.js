@@ -1,3 +1,3 @@
-const errorHandler = error => console.log('Error ---> \n', error);
+const errorHandler = error => console.log('Pipeline failed: \n', error);
 
 export default errorHandler;

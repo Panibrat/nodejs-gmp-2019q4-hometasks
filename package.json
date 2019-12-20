@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "task1": "nodemon --exec babel-node src/homework_1/task1",
-    "task2": "nodemon --exec babel-node src/homework_1/task2"
+    "task2": "nodemon --exec babel-node src/homework_1/task2",
+    "start-server": "nodemon --exec babel-node index.js",
+    "build": "babel index.js --out-dir server"
   },
   "author": "Oleksandr Panibratenko",
   "license": "ISC",
@@ -14,10 +16,17 @@
     "@babel/core": "^7.7.4",
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-babel": "^5.3.0",
     "nodemon": "^2.0.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "csvtojson": "^2.0.10"
+    "@hapi/joi": "^16.1.8",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
   }
 }
